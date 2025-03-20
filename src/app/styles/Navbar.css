@@ -3,6 +3,18 @@
     src: url(../../../public/fonts/Italianno/Italianno-Regular.ttf);
 }
 
+@font-face {
+    font-family: inter;
+    src: url(../../../public/fonts/Inter/static/Inter_18pt-Black.ttf);
+}
+
 .header-logo{
     font-family: 'italliano';
+}
+
+a{
+    z-index: 9999;
+}
+a:hover{
+    color: #CE5A5A;   
 }
