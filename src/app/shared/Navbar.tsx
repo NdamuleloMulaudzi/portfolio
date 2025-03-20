@@ -6,7 +6,7 @@ function Navbar() {
     <div className='flex justify-between'>
         <div className='px-8 py-15 flex items-center gap-5'>
             <p className='header-logo text-[40px]'>NDAMU</p>
-            <div className='bg-[#CE5A5A] border w-[20px] h-[20px] rounded-[16px]'></div>
+            <div className='bg-[#5E2BFF] border w-[20px] h-[20px] rounded-[16px]'></div>
         </div>
 
         <div className='flex gap-9 px-15 py-15 text-[20px] font-bold'>

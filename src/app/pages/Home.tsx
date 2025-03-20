@@ -34,9 +34,9 @@ function Home() {
           </div>
        </div>
 
-      <div className="hello">
-        <p>Hello</p>
-        <div className='orange-line'></div>
+      <div className="hello flex items-center">
+        <p className='font-bold text-[40px]'>Hello</p>
+        <div className='orange_line bg-[#CE5A5A] w-[100px] h-[3px] mt-[40px] mx-[-20px]'></div>
       </div>
 
     </div>
