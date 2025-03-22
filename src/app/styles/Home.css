@@ -1,3 +1,11 @@
+@font-face {
+    font-family: dw;
+    src: url(../../../public/fonts/IM_Fell_DW_Pica_SC/IMFellDWPicaSC-Regular.ttf);
+}
+
+
+
+
 .home-container{
     background: linear-gradient(180deg,#211059 28%, #8c3b3b 80%);
     filter: contrast(100%);

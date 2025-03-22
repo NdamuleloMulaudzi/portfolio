@@ -34,9 +34,17 @@ function Home() {
           </div>
        </div>
 
-      <div className="hello flex items-center">
+      <div className="hello flex items-center py-[170px] px-[120px]">
         <p className='font-bold text-[40px]'>Hello</p>
         <div className='orange_line bg-[#CE5A5A] w-[100px] h-[3px] mt-[40px] mx-[-20px]'></div>
+      </div>
+
+      <div className="introduction">
+        <p className='text-[40px] font-["dw"]'>I’m Ndamulelo Mulaudzi – A Passionate Full Stack Developer</p>
+      </div>
+
+      <div className="sub-heading">
+        <p>I create innovative, scalable, and user-friendly web applications. With a passion for clean code and solving real-world problems, I’m always looking to learn and grow in the tech space.</p>
       </div>
 
     </div>
