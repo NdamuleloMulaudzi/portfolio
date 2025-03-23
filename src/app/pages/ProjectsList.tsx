@@ -54,7 +54,7 @@ function ProjectList() {
   ];
   
   return (
-    <div className="projects h-[100vh] p-6">
+    <div id='projects' className="projects h-[100vh] p-6">
       <div className="project-header bg-[#CE5A5A] w-[488px] h-[78px] rounded-lg shadow-md">
         <p className="text-white py-10 px-60 text-[60px] font-bold">Projects</p>
       </div>
