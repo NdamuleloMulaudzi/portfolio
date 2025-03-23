@@ -4,7 +4,7 @@ import Projects from "./pages/ProjectsList";
 
 export default function Page() {
   return (
-    <div className="min-h-screen">
+    <div>
       <Home />
       <Projects />
     </div>

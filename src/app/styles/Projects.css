@@ -1,6 +1,6 @@
 .projects{
-    background: linear-gradient(180deg,#8c3b3b 28%, #211059 80%);
-    filter: contrast(100%);
+    background: linear-gradient(132deg, rgba(0, 0, 0, 1) 0%, rgb(0, 51, 128) 50%, rgb(145, 48, 3) 100%);
+    min-height: 100vh;
 }
 
 .project-image {
