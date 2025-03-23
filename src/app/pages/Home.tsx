@@ -12,7 +12,7 @@ import { motion } from "framer-motion"
 function Home() {
   return (
     <div className='home-container   text-white flex flex-col'>
-  
+     
   
       <Navbar />
 
@@ -104,13 +104,13 @@ function Home() {
        
     <div className="home-text relative">
   <div className="hello flex items-center justify-center py-[170px] px-[120px] z-10">
-    <p className="font-bold text-[40px]">Hello</p>
+    <p className="hello-text font-bold text-[40px]">Hello</p>
     <div className="orange_line bg-[#CE5A5A] w-[100px] h-[3px] mt-[40px] mx-[-20px]"></div>
   </div>
 
-  <div className="mb-5 animate-slideIn z-10">
+  <div className="mb-19 animate-slideIn z-10">
 
-  <p className="text-[70px] font-['dw'] font-semibold tracking-[2px] capitalize text-white text-shadow-md">
+  <p id='name' className=" text-[70px] font-['dw'] font-semibold tracking-[2px] capitalize text-white text-shadow-md">
   Ndamulelo Mulaudzi
   </p>
     <p className="role text-[30px] font-['dw']">Software Developer</p>

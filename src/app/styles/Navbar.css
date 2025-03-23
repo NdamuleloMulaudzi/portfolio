@@ -47,4 +47,80 @@ a:hover{
     z-index: 1;
 }
 
+.burger{
+    display: none;
+}
 
+
+@media (max-width: 468px) {
+    a, .dot{
+        display: none;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+   
+
+    .initials{
+        position: absolute;
+        top: 20;
+       
+    }
+    .burger{
+        display: block;
+        margin-top: 4px;
+    }
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    width: 100%;
+}
+
+.sidebar ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    color: #CE5A5A;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    align-self: flex-end;
+    color: white;
+}

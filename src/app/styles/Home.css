@@ -170,6 +170,7 @@
 
 
 
+
 /*loader */
 
 
@@ -207,3 +208,75 @@
   }
 
   
+
+
+  @media (max-width: 468px) {
+    .circle.one, .two, .three {
+        display: none;
+    }
+    .circle.four{
+        width: 250px;
+        height: 250px;
+        z-index: 20;
+    }
+
+    .line{
+        display: none;
+    }
+    
+    .hello-text {
+        display: none;
+    }
+    
+
+    .socials img {
+        width: 50px;
+        height: 60px;
+    }
+
+    .social:first-child img {
+        position: absolute;
+        top:16px;
+        right: 20px;
+        z-index: 1;
+    }
+    .social:nth-child(2) img {
+        position: absolute;
+        top:160px;
+        right: 20;
+        z-index: 1;
+    }
+    .social:nth-child(3) img {
+        position: absolute;
+        top:320px;
+        right: 20;
+        z-index: 21;
+    }
+    .home-text {
+        position: absolute;
+        z-index: 10;
+        padding: 20px 10px; 
+        text-align: center; 
+        color: #fff;
+    }
+
+    #name {
+        font-size: 28px;
+    }
+
+    .role {
+        font-size: 27px;
+    }
+
+    .sub-heading {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    .home-img {
+        position: absolute;
+        top: 50%;
+        width: 90%;
+        max-width: 400px;
+    }
+}

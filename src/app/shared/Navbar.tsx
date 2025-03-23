@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../styles/Navbar.css";
+import Image from "next/image";
 
 const links = [
   { name: "ABOUT", href: "about" },
@@ -21,10 +22,19 @@ const linkVariants = {
 function Navbar() {
   return (
     <motion.div
-      className="flex justify-center"
+      className="navbar flex justify-center"
       initial="hidden"
       animate="visible"
     >
+      <div className="burger">
+            <Image
+                className="burger"
+                src="/icons/menu.svg"
+                alt="X (Twitter) Icon"
+                width={55}
+                height={55}
+              />
+            </div>
       <div className="flex justify-center items-center gap-18 px-15 py-15 text-[20px] font-bold">
         {links.slice(0, 2).map((link, index) => (
           <React.Fragment key={link.name}>
@@ -37,7 +47,7 @@ function Navbar() {
               {link.name}
             </motion.a>
             <motion.div
-              className="bg-[#5E2BFF] border w-[5px] h-[5px] rounded-[16px]"
+              className="dot bg-[#5E2BFF] border w-[5px] h-[5px] rounded-[16px]"
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3, delay: index * 0.3 + 0.2 }}
@@ -67,7 +77,7 @@ function Navbar() {
         {links.slice(2).map((link, index) => (
           <React.Fragment key={link.name}>
             <motion.div
-              className="bg-[#5E2BFF] border w-[5px] h-[5px] rounded-[16px]"
+              className=" dot bg-[#5E2BFF] border w-[5px] h-[5px] rounded-[16px]"
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3, delay: (index + 2) * 0.3 + 0.2 }}

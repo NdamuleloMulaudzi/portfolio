@@ -2,34 +2,67 @@ import React from 'react';
 import Image from 'next/image';
 import { ProjectInterface } from '../interface/Project.interface';
 
-function Projects(props:ProjectInterface) {
+function Projects(props: ProjectInterface) {
   return (
-    <div className="flex items-center gap-5">
-      <div className="project-image shadow-md w-[595px] p-4 rounded-lg">
-        <Image src={props.image} alt={props.title} width={525} height={260} />
-      </div>
-      <div className="description bg-[#CE5A5A] mx-[-90px] text-white w-[425px] h-[215px] rounded-[4px] flex flex-col items-center gap-4 p-2">
-        <h2 className="text-center font-bold py-2 text-[24px]">{props.title}</h2>
-        <p>{props.description}</p>
-        <div className="buttons flex justify-between gap-[100px]">
-          <a href={props.liveLink} target="_blank" rel="noopener noreferrer">
-            <button className="flex justify-center w-[130px] bg-[#3F2789] p-3 rounded-lg font-semibold">
-              View Live
-            </button>
-          </a>
-          <a href={props.githubLink} target="_blank" rel="noopener noreferrer">
-            <button className="flex justify-center w-[130px] bg-[#3F2789] p-3 rounded-lg font-semibold">
-              Source Code
-            </button>
-          </a>
+    <div className="group relative flex flex-col lg:flex-row items-center justify-center gap-8 hover:scale-[1.02] transition-transform duration-300">
+      {/* Project Image */}
+      <div className="project-image w-full lg:w-1/2 lg:h-[400px] relative rounded-xl overflow-hidden shadow-xl">
+        <Image
+          src={props.image}
+          alt={props.title}
+          width={800}
+          height={450}
+          className="object-cover h-64 lg:h-100 w-full"
+        />
+        
+        {/* Overlay Card */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent p-6 flex flex-col justify-end">
+          <h3 className="text-2xl font-bold text-white mb-4">{props.title}</h3>
+          
+          {/* Tech Stack */}
+          <div className="flex flex-wrap gap-3 mb-4">
+            {props.techStack.map((tech, index) => (
+              <div 
+                key={index}
+                className="bg-black/40 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2"
+              >
+                <Image 
+                  src={tech.image} 
+                  alt={tech.name} 
+                  width={20} 
+                  height={20} 
+                  className="h-4 w-4 object-contain"
+                />
+                <span className="text-xs text-white font-medium">{tech.name}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-      <div className="tech-stack w-[290px] h-[128px] bg-[#5A32D8] mx-[100px] flex items-center justify-center gap-3 p-2 rounded-lg text-white ">
-        <h2 className='font-semibold text-[20px]'>Technologies Used</h2>
-        <div>
-            {props.techStack.map((tech, index) => (
-          <Image key={index} src={tech.image} alt={tech.name} width={40} height={40} title={tech.name} />
-        ))}
+
+      {/* Description Card */}
+      <div className="w-full lg:w-1/4 lg:h-[300px]  bg-[#CE5A5A]/90 backdrop-blur-sm rounded-xl p-8 shadow-xl lg:-ml-16 lg:mt-16 transform hover:shadow-2xl transition-shadow duration-300">
+        <p className="text-white mb-6 leading-relaxed">{props.description}</p>
+        
+        <div className="flex gap-4 justify-between">
+         <div  className="flex-1 bg-[#3F2789] hover:bg-[#2E1B6B] text-white  py-3 rounded-lg font-semibold text-center transition-colors">
+         <a
+            href={props.liveLink} 
+            target="_blank"
+            className=""
+          >
+            Live
+          </a>
+         </div>
+          <div className="flex-1 bg-[#3F2789] hover:bg-[#2E1B6B] text-white px-6 py-3 rounded-lg font-semibold text-center transition-colors">
+            <a 
+            href={props.githubLink} 
+            target="_blank"
+            className="flex-1 bg-[#3F2789] hover:bg-[#2E1B6B] text-white px-6 py-3 rounded-lg font-semibold text-center transition-colors"
+          >
+            Code
+          </a>
+          </div>
         </div>
       </div>
     </div>
