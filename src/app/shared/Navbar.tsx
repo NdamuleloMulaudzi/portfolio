@@ -4,11 +4,12 @@ import "../styles/Navbar.css";
 import Image from "next/image";
 
 const links = [
-  { name: "ABOUT", href: "about" },
-  { name: "PROJECTS", href: "projects" },
-  { name: "EXPERIENCE", href: "experience" },
-  { name: "CONTACT", href: "contact" },
+  { name: "ABOUT", href: "#about" },
+  { name: "PROJECTS", href: "#projects" },
+  { name: "EXPERIENCE", href: "#experience" },
+  { name: "CONTACT", href: "#contact" },
 ];
+
 
 const linkVariants = {
   hidden: { opacity: 0, y: 20 },

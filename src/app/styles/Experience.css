@@ -1,0 +1,42 @@
+.experience-container {
+    background: linear-gradient(132deg, rgba(0, 0, 0, 1) 0%, rgb(0, 51, 128) 50%, rgb(145, 48, 3) 100%);
+    min-height: 100vh;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  .glass-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .timeline-item .dot {
+    width: 12px;
+    height: 12px;
+    background: #CE5A5A;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+    top: 10px;
+  }
+  
+  .timeline-item .content {
+    padding-left: 1.5rem;
+  }
+  

@@ -5,7 +5,7 @@ import "../styles/Contact.css";
 
 function Contact() {
   return (
-    <div className="contact-page min-h-screen relative">
+    <div id="contact" className="contact-page min-h-screen relative">
      
   
 
