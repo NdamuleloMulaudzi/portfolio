@@ -1,15 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import "../styles/About.css";
+import Skills from "./Skills";
 
 function About() {
   return (
-    <div className="about-page min-h-screen bg-gradient-to-r from-black via-blue-900 to-red-800 relative">
-      <div className="circles">
-        <div className="circle one"></div>
-        <div className="circle two"></div>
-        <div className="circle three"></div>
-        <div className="circle four"></div>
+    <div className="about-page min-h-screen relative">
+      <div className="project-circles">
+ 
+        <div className="project-circle four"></div>
       </div>
 
       <div className="container mx-auto px-6 py-12 text-white relative z-10">
@@ -29,7 +28,7 @@ function About() {
               alt="About Me"
               width={455}
               height={455}
-              className="rounded-full shadow-lg mx-auto"
+              className=" shadow-lg mx-auto"
             />
           </div>
 
@@ -46,6 +45,7 @@ function About() {
             </p>
 
             <div className="orange_line"></div>
+        <Skills />
           </div>
         </div>
       </div>
