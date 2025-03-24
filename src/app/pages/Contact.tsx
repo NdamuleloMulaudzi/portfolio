@@ -11,8 +11,8 @@ function Contact() {
 
       <div className="container mx-auto px-6 py-12 text-white relative z-10">
         <div className="contact-header text-center mb-8">
-          <div className="project-header bg-[#CE5A5A] w-[350px] h-[68px] rounded-lg shadow-lg xs:mx-auto flex items-center justify-center">
-            <h2 className="text-white text-4xl font-bold relative top-9 left-30">Contact</h2>
+          <div className="project-header bg-[#CE5A5A] w-[350px] h-[58px] rounded-lg shadow-lg xs:mx-auto flex items-center justify-center">
+            <h2 className="text-white text-[90px] font-bold relative top-7 left-30">Contact</h2>
           </div>
           
         </div>
