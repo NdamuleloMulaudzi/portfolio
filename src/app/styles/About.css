@@ -1,7 +1,6 @@
 .about-page {
     position: relative;
-    background: linear-gradient(132deg, rgba(0, 0, 0, 1) 0%, rgb(0, 51, 128) 50%, rgb(145, 48, 3) 100%);
-    min-height: 100vh;
+    background: linear-gradient(119deg, rgba(0, 0, 0, 1) 0%, rgb(0, 51, 128) 50%, rgb(145, 48, 3) 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
