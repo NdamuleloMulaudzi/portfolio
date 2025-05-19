@@ -25,18 +25,22 @@ function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="contact-form">
+     
+
       <div className="form-group">
-        <label htmlFor="name">Name</label>
+        <label htmlFor="email">Name</label>
         <input
-          type="text"
-          id="name"
-          name="name"
+          type="email"
+          id="email"
+          name="email"
           value={formData.name}
           onChange={handleChange}
           placeholder="Your Name"
           required
         />
       </div>
+
+      
 
       <div className="form-group">
         <label htmlFor="email">Email</label>

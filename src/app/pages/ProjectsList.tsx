@@ -41,8 +41,8 @@ function ProjectList() {
   
   return (
     <div id='projects' className="min-h-screen p-6">
-      <div className="project-header mx-auto max-w-2xl bg-[#CE5A5A] rounded-lg shadow-lg p-4 mb-16">
-        <h2 className="text-white text-4xl md:text-6xl font-bold text-center">
+      <div className="project-header mx-auto max-w-2xl  border-b border-b-[#CE5A5A] p-4 mb-16">
+        <h2 className="text-white text-2xl md:text-5xl font-bold text-center">
           Projects
         </h2>
       </div>

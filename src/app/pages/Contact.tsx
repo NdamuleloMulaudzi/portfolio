@@ -1,20 +1,18 @@
 import React from "react";
 import Image from "next/image";
-import ContactForm from "../components/ContactForm";  // Import the ContactForm component
+import ContactForm from "../components/ContactForm"; // Import the ContactForm component
 import "../styles/Contact.css";
 
 function Contact() {
   return (
     <div id="contact" className="contact-page min-h-screen relative">
-     
-  
-
       <div className="container mx-auto px-6 py-12 text-white relative z-10">
         <div className="contact-header text-center mb-8">
-          <div className="project-header bg-[#CE5A5A] w-[350px] h-[58px] rounded-lg shadow-lg xs:mx-auto flex items-center justify-center">
-            <h2 className="text-white text-[90px] font-bold relative top-7 left-30">Contact</h2>
+          <div className="project-header mx-auto max-w-2xl  border-b border-b-[#CE5A5A] shadow-lg p-4 mb-16">
+            <h2 className="text-white text-2xl md:text-5xl font-bold text-center">
+              Contact
+            </h2>
           </div>
-          
         </div>
 
         <div className="contact-content flex flex-col md:flex-row items-center gap-10 mt-20">
@@ -39,8 +37,12 @@ function Contact() {
             </div>
 
             <div className="contact-info mt-8 text-lg text-gray-200">
-              <p className="leading-relaxed">You can also contact me directly at:</p>
-              <p className="mt-2 font-bold">Email: ndamulel.mulaudzi@gmail.com</p>
+              <p className="leading-relaxed">
+                You can also contact me directly at:
+              </p>
+              <p className="mt-2 font-bold">
+                Email: ndamulel.mulaudzi@gmail.com
+              </p>
               <p className="mt-2 font-bold">Phone: +27665523573</p>
             </div>
 
