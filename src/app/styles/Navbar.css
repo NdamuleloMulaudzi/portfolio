@@ -53,7 +53,7 @@ a:hover{
 
 
 @media (max-width: 468px) {
-    a, .dot{
+    .navbar a, .dot{
         display: none;
     }
 

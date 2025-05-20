@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"; 
+import Link from "next/link"
 import "../styles/Footer.css";
 
 function Footer() {
@@ -23,11 +24,11 @@ function Footer() {
         </div>
 
       
-        <div className="footer-links mt-60">
-        <a href="/about">Home</a>
-          <a href="/about">About</a>
-          <a href="/projects">Projects</a>
-          <a href="/contact">Contact</a>
+        <div className="footer-links flex justify-center gap-4 ">
+          <Link className="" href="/about">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/projects">Projects</Link>
+          <Link href="/contact">Contact</Link>
         </div>
 
       

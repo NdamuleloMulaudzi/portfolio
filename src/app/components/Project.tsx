@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { ProjectInterface } from "../interface/Project.interface";
+import "../styles/Projects.css";
 
 function Projects(props: ProjectInterface) {
   return (
@@ -46,14 +47,18 @@ function Projects(props: ProjectInterface) {
       <div className="w-full lg:w-1/4 lg:h-[300px]  bg-[#CE5A5A]/90 backdrop-blur-sm rounded-xl p-8 shadow-xl lg:-ml-16 lg:mt-16 transform hover:shadow-2xl transition-shadow duration-300">
         <p className="text-white mb-6 leading-relaxed">{props.description}</p>
 
-        <div className="flex gap-4 justify-between">
-          <div className="flex-1 bg-[#3F2789] hover:bg-[#2E1B6B] text-white py-3 rounded-lg font-semibold text-center transition-colors">
-            <a href={props.liveLink} target="_blank">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-4 justify-between">
+          <div className="flex-1 bg-[#3F2789] hover:bg-[#2E1B6B] text-white py-2 rounded-lg font-semibold text-center transition-colors">
+            <a href={props.liveLink} target="_blank" rel="noopener noreferrer">
               Live
             </a>
           </div>
-          <div className="flex-1 bg-[#cac5d8] hover:bg-[#2E1B6B] text-white px-6 py-3 rounded-lg font-semibold text-center transition-colors">
-            <a href={props.githubLink} target="_blank">
+          <div className="flex-1 bg-[#3F2789] hover:bg-[#2E1B6B] text-white py-2 rounded-lg font-semibold text-center transition-colors">
+            <a
+              href={props.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Code
             </a>
           </div>
