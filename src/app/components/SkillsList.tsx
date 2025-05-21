@@ -28,6 +28,8 @@ const skills = {
     { name: "Git", icon: "/tech/git.svg" },
     { name: "Docker", icon: "/tech/docker.svg" },
     { name: "Firebase", icon: "/tech/firebase.svg" },
+    { name: "Figma", icon: "/tech/figma.svg" },
+    { name: "AWS", icon: "/tech/aws.svg" },
 
   ],
   

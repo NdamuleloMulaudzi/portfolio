@@ -5,7 +5,7 @@ import SkillList from "../components/SkillsList";
 
 function About() {
   return (
-    <div className="about-page min-h-screen relative">
+    <div id='about' className="about-page min-h-screen relative">
       <div className="project-circles">
         <div className="project-circle four"></div>
       </div>
