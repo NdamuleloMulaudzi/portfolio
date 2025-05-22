@@ -1,0 +1,94 @@
+
+
+/* Container */
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo & Social Icons */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ce5a5a;
+  margin-bottom: 20px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: white ;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: #ce5a5a;
+  transform: scale(1.1);
+}
+
+.footer-links {
+  padding: 20px !important;
+}
+
+.footer-links a {
+  color: white;
+  font-size: 16px !important;
+  display: inline-block !important;
+  margin: 10px !important;
+}
+
+.footer-links a:hover {
+  color: #ce5a5a;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-bottom {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 30px;
+}
+
+/* Footer Styling with Glass Effect */
+footer {
+  background: linear-gradient(49deg, rgba(0, 0, 0, 1) 0%, rgb(0, 51, 128) 50%, rgb(145, 48, 3) 100%);
+ 
+  backdrop-filter: blur(10px); /* Blurring background */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+/* Container */
+
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .footer-logo {
+    margin-bottom: 15px;
+  }
+}
+
+

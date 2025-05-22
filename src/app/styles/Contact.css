@@ -1,0 +1,91 @@
+/* Contact.css */
+.contact-page {
+    background: linear-gradient(132deg, rgba(0, 0, 0, 1) 0%, rgb(0, 51, 128) 50%, rgb(145, 48, 3) 100%);
+    min-height: 100vh;
+  }
+  
+  .contact-circles .circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+    background-color: #CE5A5A;
+  }
+  
+  .contact-circle.one {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 10%;
+  }
+  
+  .container {
+    max-width: 1200px;
+  }
+  
+  .contact-header {
+    text-align: center;
+  }
+  
+ 
+  
+  .contact-details {
+    color: #E0E0E0;
+  }
+  
+  .contact-form {
+    margin-top: 20px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #444;
+    color: white;
+  }
+  
+  .submit-btn {
+    background-color: #CE5A5A;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #B43F3F;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+  }
+  
+  .orange_line {
+    margin-top: 20px;
+    height: 2px;
+    background-color: #CE5A5A;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
