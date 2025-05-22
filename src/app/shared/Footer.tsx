@@ -11,10 +11,10 @@ function Footer() {
         <div className="footer-top mb-7">
           <h2 className="footer-logo">Ndamulelo</h2>
           <div className="social-icons flex">
-            <a href="https://github.com/ndamulelom" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/NdamuleloMulaudzi" target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
-            <a href="https://www.linkedin.com/in/ndamulelomulaudzi/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/ndamumulaudzi" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
             <a href="https://twitter.com/ndamulelomulaudzi" target="_blank" rel="noopener noreferrer">
@@ -25,10 +25,10 @@ function Footer() {
 
       
         <div className="footer-links flex justify-center gap-4 ">
-          <Link className="" href="/about">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/projects">Projects</Link>
-          <Link href="/contact">Contact</Link>
+          <Link className="" href="#home">Home</Link>
+          <Link href="#about">About</Link>
+          <Link href="#projects">Projects</Link>
+          <Link href="#contact">Contact</Link>
         </div>
 
       

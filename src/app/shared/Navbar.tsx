@@ -23,9 +23,9 @@ const linkVariants = {
 function Navbar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+
   return (
     <>
-      {/* Navbar */}
       <motion.div
         className="navbar flex justify-center"
         initial="hidden"
@@ -80,7 +80,7 @@ function Navbar() {
                 href={link.href}
                 custom={index}
                 variants={linkVariants}
-                whileHover={{ scale: 1.1, color: "#CE5A5A" }}
+                whileHover={{ scale: 1.1}}
               >
                 {link.name}
               </motion.a>
@@ -124,7 +124,7 @@ function Navbar() {
                 href={link.href}
                 custom={index + 2}
                 variants={linkVariants}
-                whileHover={{ scale: 1.1, color: "#CE5A5A" }}
+                whileHover={{ scale: 1.1 }}
               >
                 {link.name}
               </motion.a>
@@ -159,7 +159,7 @@ function Navbar() {
                     <motion.a
                       href={link.href}
                       className="block text-xl"
-                      whileHover={{ scale: 1.1, color: "#CE5A5A" }}
+                      whileHover={{ scale: 1.1}}
                       onClick={() => setSidebarOpen(false)}
                     >
                       {link.name}

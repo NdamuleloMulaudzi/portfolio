@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ContactForm from "../components/ContactForm"; // Import the ContactForm component
+import ContactForm from "../components/ContactForm";
 import "../styles/Contact.css";
 
 function Contact() {
@@ -16,7 +16,6 @@ function Contact() {
         </div>
 
         <div className="contact-content flex flex-col md:flex-row items-center gap-10 mt-20">
-          {/* Wrapper div with relative positioning */}
           <div className="contact-image-wrapper relative w-full md:w-1/3">
             <Image
               src="/10661.jpg"
@@ -25,8 +24,8 @@ function Contact() {
               height={455}
               className="l shadow-lg mx-auto"
             />
-            {/* Positioned text over the image */}
-            <p className="text-[30px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-lg text-gray-300 mt-16 font-semibold z-20">
+
+            <p className="absolute inset-0 flex items-center justify-center px-4 text-center text-[26px] sm:text-lg md:text-2xl text-gray-200 font-semibold z-20">
               I'm always open to new opportunities. Get in touch with me!
             </p>
           </div>

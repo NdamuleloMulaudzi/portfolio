@@ -42,7 +42,7 @@ function SkillsList({ categoriesToShow }) {
         .filter(([category]) => categoriesToShow.includes(category))
         .map(([category, skillSet], index) => (
           <div key={index}>
-            <h3 className="text-2xl font-bold text-center capitalize mb-4">
+            <h3 className="text-xl sm:text-2xl font-bold text-center capitalize mb-4">
               {category === "other"
                 ? "Other Technologies"
                 : category === "backend"
