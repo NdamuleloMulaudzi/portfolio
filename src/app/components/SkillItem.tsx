@@ -1,7 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
-function SkillItem({ name, icon }) {
+
+type SkillItemProps = {
+  name: string;
+  icon: string;
+};
+
+function SkillItem({ name, icon }: SkillItemProps) {
   return (
     <div className="flex flex-col items-center space-y-2">
       <Image

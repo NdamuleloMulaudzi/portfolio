@@ -35,7 +35,10 @@ const skills = {
   
 };
 
-function SkillsList({ categoriesToShow }) {
+type SkillListProps = {
+  categoriesToShow:string [];
+};
+function SkillsList({ categoriesToShow }:SkillListProps) {
   return (
     <div className="mt-6 space-y-10">
       {Object.entries(skills)

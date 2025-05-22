@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React, { useState } from 'react';
 
@@ -9,38 +9,33 @@ function ContactForm() {
     message: ''
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log('Form submitted', formData);
     alert('Thank you for reaching out!');
   };
 
   return (
     <form onSubmit={handleSubmit} className="contact-form">
-     
-
       <div className="form-group">
-        <label htmlFor="email">Name</label>
+        <label htmlFor="name">Name</label>
         <input
-          type="email"
-          id="email"
-          name="email"
+          type="text"
+          id="name"
+          name="name"
           value={formData.name}
           onChange={handleChange}
           placeholder="Your Name"
           required
         />
       </div>
-
-      
 
       <div className="form-group">
         <label htmlFor="email">Email</label>

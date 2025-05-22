@@ -26,7 +26,7 @@ function Contact() {
             />
 
             <p className="absolute inset-0 flex items-center justify-center px-4 text-center text-[26px] sm:text-lg md:text-2xl text-gray-200 font-semibold z-20">
-              I'm always open to new opportunities. Get in touch with me!
+            I&apos;m{" "} always open to new opportunities. Get in touch with me!
             </p>
           </div>
 

@@ -5,7 +5,7 @@ import SkillList from "../components/SkillsList";
 
 function About() {
   return (
-    <div id='about' className="about-page min-h-screen relative">
+    <div id="about" className="about-page min-h-screen relative">
       <div className="project-circles">
         <div className="project-circle four"></div>
       </div>
@@ -38,12 +38,13 @@ function About() {
 
           <div className="about-details text-center md:text-left md:w-2/3">
             <p className="text-lg text-gray-200 leading-relaxed">
-              Hi! I'm{" "}
+              Hi! I&apos;m{" "}
               <span className="font-bold text-white">Ndamulelo Mulaudzi</span>,
               a passionate front-end developer focused on creating intuitive
               user interfaces. With a love for animation, technology, and
               gaming, I always seek creative ways to bring ideas to life.
             </p>
+
             <p className="mt-4 text-lg text-gray-200 leading-relaxed">
               I believe in the power of continuous learning and enjoy staying
               updated with the latest industry trends. Lets connect and create

@@ -9,7 +9,8 @@ function Skills() {
       <p className="text-gray-400 mt-2 text-center">
         Technologies I work with:
       </p>
-      <SkillsList />
+      <SkillsList categoriesToShow={['Frontend', 'Backend', 'Tools']} />
+
     </div>
   );
 }
