@@ -10,7 +10,7 @@ function ProjectList() {
       title: 'Docket',
       description:
         'Docket is a modern note-taking web application designed for efficiency and organization. It allows users to create, edit, and manage notes seamlessly, ensuring easy access to important information anytime.',
-      githubLink: 'https://github.com/your-username/docket',
+      githubLink: 'https://github.com/NdamuleloMulaudzi/note-taking-app',
       liveLink: 'https://docket-app.com',
       techStack: [
         { name: 'Angular', image: '/tech/angular.svg' },
@@ -27,7 +27,7 @@ function ProjectList() {
       title: 'Fleet Management Dashboard',
       description:
         'A comprehensive web application designed to monitor and manage a fleet of vehicles in real-time. The dashboard provides key features such as vehicle tracking, route optimization, and status updates. It includes an interactive map powered by Google Maps API.',
-      githubLink: 'https://github.com/your-username/another-project',
+      githubLink: 'https://github.com/NdamuleloMulaudzi/vehicle-tracking',
       liveLink: 'https://another-project.com',
       techStack: [
         { name: 'React', image: '/tech/react.svg' },
