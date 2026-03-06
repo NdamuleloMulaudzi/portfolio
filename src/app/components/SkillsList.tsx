@@ -18,16 +18,12 @@ const skills = {
     { name: "Spring Boot", icon: "/tech/spring-boot.svg" },
     { name: "Express.js", icon: "/tech/express.svg" },
     { name: "Java", icon: "/tech/java.svg" },
-    { name: "C++", icon: "/tech/c++.svg" },
-    { name: "Qt Framework", icon: "/tech/qt.svg" },
     { name: "PostgreSQL", icon: "/tech/postgres.svg" },
-    { name: "MongoDB", icon: "/tech/mongo.svg" },
   ],
   other: [
     
     { name: "Git", icon: "/tech/git.svg" },
     { name: "Docker", icon: "/tech/docker.svg" },
-    { name: "Firebase", icon: "/tech/firebase.svg" },
     { name: "Figma", icon: "/tech/figma.svg" },
     { name: "AWS", icon: "/tech/aws.svg" },
 
